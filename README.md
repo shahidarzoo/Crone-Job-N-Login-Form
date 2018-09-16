@@ -1,6 +1,6 @@
 
 #File Upload
-```html
+```php
 
 <?php
 
