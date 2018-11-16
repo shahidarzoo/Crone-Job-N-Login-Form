@@ -59,7 +59,7 @@ class ReservationUser extends Command
 ## Inside Kernel register App\Console\Kernel.php
 ```php
 protected $commands = [
-        'App\Console\Commands\ReservationUser'
+       Commands\ReservationUser::class
     ];
 ```
 ## set schdule in same App\Console\Kernel.php
