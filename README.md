@@ -69,5 +69,5 @@ protected function schedule(Schedule $schedule)
     $schedule->command('user:email')->everyMinute();
 }
 ```
-Check your conrone job has registered or not: php artisan 
+### Run crone job 
 Know run php artisan user:email
