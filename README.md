@@ -1,6 +1,7 @@
 
 # Crone Job In Laravel 5
-### First of all run the artisan command: php artisan make:command ReservationUser
+### First of all run the artisan command: 
+php artisan make:command ReservationUser
 ### Then it will create in side App\console\command\ReservationUser.php
 ```php
 namespace App\Console\Commands;
@@ -64,9 +65,9 @@ protected $commands = [
 ## set schdule in same App\Console\Kernel.php
 ```php
 protected function schedule(Schedule $schedule)
-    {
-        $schedule->command('user:email')->everyMinute();
-    }
+{
+    $schedule->command('user:email')->everyMinute();
+}
 ```
-### Check your conrone job has registered or not: php artisan 
-### Know run php artisan user:email
+Check your conrone job has registered or not: php artisan 
+Know run php artisan user:email
