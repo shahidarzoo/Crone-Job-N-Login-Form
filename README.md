@@ -105,4 +105,64 @@ class LanguageSwitcher
 }
 
 ```
+### Route
+```php
+Route::group(['middleware' => 'langSwitcher'], function(){
+	/*Route */
+	Route::get('/', function(){
+		return view('welcome');
+	});
 
+	/* Language Switcher */
+
+	Route::get('language/{lang}', function($lang){
+		\Session::put('locale', $lang);
+		return redirect()->back();
+	});
+  });
+
+```
+### View
+inside layout/app.php login.php and register.php
+copy and post the code from above filse
+
+
+inside resouces/lang/en/auth.php add these two lines
+```
+ 'login' => 'Login',
+  'register' => 'Register',
+```
+inside resouces/lang/ur/auth.php add these two lines
+```
+ 'login' => 'لوگن',
+    'register' => 'رجسٹر',
+```
+
+inside resouces/lang/en/forms.php add these lines
+```
+<?php
+return [
+	'name' => 'Name',
+	'email' => 'E-Mail Address',
+	'password' => 'Password',
+	'cpassword' => 'Confirm Password',
+	'rememberme' => 'Remember Me',
+	'fpassword' => 'Forget Password'
+
+?>
+```
+
+inside resouces/lang/ur/forms.php add these lines
+```
+<?php
+return [
+	'name' => 'نام',
+	'email' => ' ای میل ',
+	'password' => 'پاس ورڑ  ',
+	'cpassword' => 'کنفرم پاس ورڑ ',
+	'rememberme' => 'یاد رکھے  ',
+	'fpassword' => 'پاسورڑبھول گیا  '
+];
+
+?>
+```
