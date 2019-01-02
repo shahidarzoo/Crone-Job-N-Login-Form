@@ -314,7 +314,7 @@ inside resouces/lang/ur/auth.php add these two lines
     'register' => 'رجسٹر',
 ```
 
-inside resouces/lang/en/forms.php add these lines
+inside resouces/lang/en make a file forms.php add these lines
 ```
 <?php
 return [
@@ -328,7 +328,7 @@ return [
 ?>
 ```
 
-inside resouces/lang/ur/forms.php add these lines
+inside resouces/lang/ur make a file forms.php add these lines
 ```
 <?php
 return [
