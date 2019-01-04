@@ -72,6 +72,9 @@ protected function schedule(Schedule $schedule)
 ### Run crone job 
 Know run php artisan user:email
 
+## Windows 10 update stop
+[https://www.easeus.com/todo-backup-resource/how-to-stop-windows-10-from-automatically-update.html#part1](https://www.easeus.com/todo-backup-resource/how-to-stop-windows-10-from-automatically-update.html#part1)
+
 # Translate
 ### Make middleware LanguageSwitcher
 ```php
